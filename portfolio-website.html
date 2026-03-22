@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goswami Portfolio</title>
+  <style>
+    :root { --bg: #fafafa; --card: #fff; --text: #1b1b1b; --accent: #0b6efd; --muted: #555; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
+    .wrapper { max-width: 930px; margin: 0 auto; padding: 1.6rem; }
+    header { text-align: center; margin-bottom: 1.8rem; }
+    h1 { margin: 0; font-size: 2.2rem; color: var(--accent); }
+    p.lead { color: var(--muted); font-size: 1.05rem; }
+    .card { background: var(--card); border: 1px solid #ddd; border-radius: 8px; padding: 1.1rem 1.2rem; box-shadow: 0 0 12px rgba(0,0,0,.05); margin-bottom: 1rem; }
+    .grid { display: grid; gap: .9rem; }
+    .grid-2 { grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); }
+    ul { margin: .5rem 0 0 1.1rem; padding: 0; }
+    a.button { display: inline-block; padding: .6em 1.1em; color: #fff; background: var(--accent); border-radius: 6px; text-decoration: none; margin-top: .7rem; }
+    footer { text-align: center; color: var(--muted); margin-top: 2rem; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Goswami</h1>
+      <p class="lead">Creative freelance web solutions for startups & new businesses • 1-year experience</p>
+    </header>
+
+    <section class="card">
+      <h2>About Me</h2>
+      <p>Hello! I am Goswami, a front-end focused web designer/developer helping startups and new businesses establish a strong web presence with simple, fast and modern websites.
+      I bring around 1 year of hands-on experience building responsive websites, landing pages, and small business showcases.</p>
+    </section>
+
+    <section class="card">
+      <h2>What I Do</h2>
+      <div class="grid grid-2">
+        <div>
+          <strong>Design + Build</strong>
+          <p>Creating clean, mobile-friendly landing pages and portfolio sites that load fast and convert visitors.</p>
+        </div>
+        <div>
+          <strong>Website Setup</strong>
+          <p>Deploying sites on GitHub Pages, Netlify, or simple hosting for quick launch.</p>
+        </div>
+        <div>
+          <strong>Maintenance</strong>
+          <p>Ongoing updates, content changes, and minor feature improvements.</p>
+        </div>
+        <div>
+          <strong>Support</strong>
+          <p>Fast replies via WhatsApp and email to help new businesses move forward.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5, CSS3, JavaScript (ES6)</li>
+        <li>Responsive layouts (Flexbox, Grid)</li>
+        <li>Bootstrap / Tailwind CSS basics</li>
+        <li>Website publishing and SEO basics</li>
+        <li>Contact forms + simple interactions</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>Ready to start? Reach out on WhatsApp or email:</p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/919258999273" target="_blank" rel="noreferrer">+91 92589 99273</a></p>
+      <p><strong>Email:</strong> <a href="mailto:goswamitanishq58@gmail.com">goswamitanishq58@gmail.com</a></p>
+      <a class="button" href="https://wa.me/919258999273" target="_blank" rel="noreferrer">Message on WhatsApp</a>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Goswami - New Business Portfolio</p>
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
